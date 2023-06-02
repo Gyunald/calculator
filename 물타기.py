@@ -18,4 +18,4 @@ with c1 :
             st.error(f"{int(물타기)} ({round(추매수익률,2)}%)")
 
         except ZeroDivisionError:
-            st.warning('🎈 조건입력')
+            st.warning('조건입력')

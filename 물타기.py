@@ -3,10 +3,10 @@ c1,c2 = st.columns([.6,1])
 with c1 :
     with st.expander('🎈'):
         try:
-            평단 = st.number_input('평균금액',min_value=0,step=50)
+            평단 = st.number_input('평균단가',min_value=0,step=50)
             수량 = st.number_input('보유수량',min_value=0,step=10)
             보유금액 = st.text_input('보유금액',f"{평단*수량:,}")
-            현재 = st.number_input('현재금액',min_value=0,step=50)
+            현재 = st.number_input('현재단가',min_value=0,step=50)
             매수금액 = 평단 * 수량
             추매수량 = st.number_input("추매수량",min_value=0, step=10)
             보유금액 = st.text_input('추매금액',f"{추매수량*추매수량:,}")
